@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+body {
+
+    background-color:rgb(113, 166, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60PX;
+    margin: 200PX;
+   border-color: blue;
+  }
+  .Bienvenida{
+    padding-inline-start: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  .titulo{
+    color: black;
+    font-size: 52px;
+}
+
+.subtitulo{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+#boton-siguiente{
+  width: 150px;
+  height: 100px;
+  background-color: #2e7d32;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: white;
+
+}
+
+  .libro {
+    width: 290px;
+    height: 360px;
+    position: relative;
+    animation: flipBook 4s infinite alternate;
+    margin-top: 30px;
+  }
+
+  .tapa-libro {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(to right, #176651, #3eb38a);
+    color: rgb(210, 20, 99);
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 8px;
+  }
+  .tapa-libro img{
+    width: 280px;
+    border-radius: 5px;
+  }
+
+  .libro::after {
+    content: "nuestro libro";
+    font-weight: bold;
+    background-color: rgb(161, 161, 210);
+    width: 150px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flipBook 4s infinite alternate;
+  }
+  @keyframes flipBook {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(-150deg); }
+  }
+
+  .Rosa {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 34px 8px 8px 100px;
+  }
+
+  .petalo {
+    position: absolute;
+    width: 62px;
+    height: 106px;
+    background: radial-gradient(circle, #be0945 20%, #8b0606 100%);
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom center;
+    animation: spin 10s linear infinite;
+  }
+    .petalo:nth-child(1)  { transform: rotate(0deg);    top: 0; left: 20px; } 
+    .petalo:nth-child(2)  { transform: rotate(45deg);   top: 0; left: 20px; }
+    .petalo:nth-child(3)  { transform: rotate(90deg);   top: 0; left: 20px; }
+    .petalo:nth-child(4)  { transform: rotate(135deg);  top: 0; left: 20px; }
+    .petalo:nth-child(5)  { transform: rotate(180deg);  top: 0; left: 20px; }
+    .petalo:nth-child(6)  { transform: rotate(225deg);  top: 0; left: 20px; }
+    .petalo:nth-child(7)  { transform: rotate(270deg);  top: 0; left: 20px; }
+    .petalo:nth-child(8)  { transform: rotate(315deg);  top: 0; left: 20px; }
+
+    .centro {
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      width: 80px;
+      height: 75px;
+      background: #ffeb3b;
+      border-radius: 56%;
+      box-shadow: 0 0 10px #fdd835;
+  }
+    .tallo {
+      position: absolute;
+      top: 152px;
+      left: 41px;
+      width: 32px;
+      height: 193px;
+      background: #2e7d32;
+      border-radius: 21px;
+  }
+    
+ #preciona{
+  width: 150px;
+  height: 100px;
+  background-color: #2e7d32;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: white;
+
+ }
+
+ 
